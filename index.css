@@ -1,0 +1,56 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh;
+}
+.corousel {
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  transition: scroll 0.5s ease;
+}
+.Title {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.card-img {
+  height: 20vh;
+  border-radius: 0.3rem 0.3rem 0rem 0rem;
+}
+
+.corousel-card {
+  position: relative;
+  height: 32vh;
+  width: 20vw;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin: 0 0.5vw;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  font-family: Poppins, sans-serif;
+  font-size: small;
+  font-weight: bold;
+}
